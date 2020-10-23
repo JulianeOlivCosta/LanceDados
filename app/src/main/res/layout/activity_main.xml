@@ -9,43 +9,6 @@
     android:clickable="false"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Dado1"
-        android:layout_width="85dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="108dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#0000BCD4"
-        android:fontFamily="casual"
-        android:text="@string/etiqueta_dado_1"
-        android:textColor="#0F29B8"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
-
-    <TextView
-        android:id="@+id/dado2"
-        android:layout_width="85dp"
-        android:layout_height="32dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#0000BCD4"
-        android:fontFamily="casual"
-        android:text="@string/etiqueta_dado_2"
-        android:textColor="#0F29B8"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.739"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
-
     <Button
         android:id="@+id/LanceDadosBotao"
         style="@style/Widget.MaterialComponents.Button"
@@ -54,7 +17,7 @@
         android:layout_marginTop="196dp"
         android:backgroundTint="#00FFFFFF"
         android:fontFamily="sans-serif"
-        android:soundEffectsEnabled="true"
+        android:soundEffectsEnabled="?android:attr/windowOverscan"
         android:text="@string/etiqueta_botao_lancar_dados"
         android:textAlignment="center"
         android:textColor="#092CEF"
@@ -76,30 +39,30 @@
         android:layout_height="251dp"
         android:layout_marginStart="48dp"
         android:hapticFeedbackEnabled="false"
-        android:tint="#FDE6E6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.681"
-        app:srcCompat="@drawable/dado_legal" />
+        app:srcCompat="@drawable/dado_legal"
+        app:tint="#FDE6E6" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="157dp"
         android:layout_height="156dp"
         android:hapticFeedbackEnabled="false"
-        android:tint="#A9F8F8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.561"
-        app:srcCompat="@drawable/dado_legal" />
+        app:srcCompat="@drawable/dado_legal"
+        app:tint="#A9F8F8" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="60dp"
-        android:layout_height="82dp"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.005"
@@ -107,5 +70,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.995"
         app:srcCompat="@drawable/android_marrento" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="147dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="147dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/dice_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
