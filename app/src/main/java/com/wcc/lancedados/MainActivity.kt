@@ -11,12 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val botaoLancarDados : Button = findViewById<Button>(R.id.LanceDadosBotao)
-        val valorDado1 : TextView = findViewById<TextView>(R.id.Dado1)
-        val valorDado2 : TextView = findViewById<TextView>(R.id.dado2)
+
 
         botaoLancarDados.setOnClickListener {
-            valorDado1.text = lancarDados ().toString()
-            valorDado2.text = lancarDados ().toString()
+
         }
     }
     fun lancarDados(): Int{
