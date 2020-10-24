@@ -72,11 +72,11 @@
         app:srcCompat="@drawable/android_marrento" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/Dado1"
         android:layout_width="147dp"
         android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/Dado2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -84,13 +84,13 @@
         app:srcCompat="@drawable/dice_1" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/Dado2"
         android:layout_width="147dp"
         android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/Dado1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.056"
         app:srcCompat="@drawable/dice_1" />
