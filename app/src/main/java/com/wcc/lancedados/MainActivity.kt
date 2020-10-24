@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         return recuperaFaceDado(geraNumero())
     }
 
-    fun recuperaFaceDado(valor: Int): Int { //dessa forma fera numeros iguais -  dados do mesmo valor. fazer uma funcao só . random das imagens
+    fun recuperaFaceDado(valor: Int): Int {
 
         return when (valor) {
             1 -> R.drawable.dice_1
