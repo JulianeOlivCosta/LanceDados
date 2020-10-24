@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.LanceDados" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#8BF6FA</item>
-        <item name="colorPrimaryVariant">#FDACB5</item>
+        <item name="colorPrimary">@color/green_200</item>
+        <item name="colorPrimaryVariant">@color/pink_200</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
